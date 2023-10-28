@@ -1,4 +1,4 @@
-package Entity;
+package entity;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -14,8 +14,8 @@ import lombok.NoArgsConstructor;
 @Builder
 public class Client {
 
-        @GeneratedValue(strategy = GenerationType.IDENTITY)
         @Id
+        @GeneratedValue(strategy = GenerationType.IDENTITY)
         @Column(name = "id")
         private long id;
 

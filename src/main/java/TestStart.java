@@ -1,11 +1,7 @@
-import Entity.Client;
-import Entity.Planet;
-import Service.ClientCrudService;
-import Service.HibernateUtil;
-import Service.PlanetCrudService;
+import service.ClientCrudService;
+import service.HibernateUtil;
+import service.PlanetCrudService;
 import org.flywaydb.core.Flyway;
-
-import java.util.Optional;
 
 public class TestStart {
     public static void main(String[] args) {
@@ -19,7 +15,7 @@ public class TestStart {
 
         ClientCrudService clientCrudService = new ClientCrudService();
         PlanetCrudService planetCrudService = new PlanetCrudService();
-        
+
         HibernateUtil.getInstance().close();
     }
 }
